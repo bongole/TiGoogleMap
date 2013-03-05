@@ -1,0 +1,1 @@
+Copy GoogleMaps.framework/Resources/GoogleMaps.bundle to your project's Resources directory that has app.js.
