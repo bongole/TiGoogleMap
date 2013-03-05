@@ -5,35 +5,18 @@
 
 
 // open a single window
-var win = Ti.UI.createWindow({
-	backgroundColor:'white'
+
+Titanium.UI.setBackgroundColor('#FFF');
+var win = Ti.UI.createWindow();
+
+var GM = require('com.bongole.ti.googlemap');
+GM.APIKey = 'YOUR API KEY'
+var map = GM.createView({
+    region: {latitude:33.74511, longitude:-84.38993,
+        latitudeDelta:0.01, longitudeDelta:0.01},
+        userLocation:true,
+        width: '100dp',
+        height: '100dp'
 });
-var label = Ti.UI.createLabel();
-win.add(label);
-win.open();
 
-// TODO: write your module tests here
-var TiGoogleMap = require('com.bongole.ti.googlemap');
-Ti.API.info("module is => " + TiGoogleMap);
-
-label.text = TiGoogleMap.example();
-
-Ti.API.info("module exampleProp is => " + TiGoogleMap.exampleProp);
-TiGoogleMap.exampleProp = "This is a test value";
-
-if (Ti.Platform.name == "android") {
-	var proxy = TiGoogleMap.createExample({
-		message: "Creating an example Proxy",
-		backgroundColor: "red",
-		width: 100,
-		height: 100,
-		top: 100,
-		left: 150
-	});
-
-	proxy.printMessage("Hello world!");
-	proxy.message = "Hi world!.  It's me again.";
-	proxy.printMessage("Hello world!");
-	win.add(proxy);
-}
-
+win.add(map);
