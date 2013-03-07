@@ -5,6 +5,7 @@
  * and licensed under the Apache Public License (version 2)
  */
 #import "ComBongoleTiGooglemapModule.h"
+#import "ComBongoleTiGooglemapAnnotationProxy.h"
 #import "TiBase.h"
 #import "TiHost.h"
 #import "TiUtils.h"
@@ -109,5 +110,28 @@
     ENSURE_TYPE(value, NSString);
     [GMSServices provideAPIKey:value];
 }
+
+-(id)createAnnotation:(id)args
+{
+    id o;
+    ENSURE_ARG_OR_NIL_AT_INDEX(o, args, 0, NSObject);
+    return [[[ComBongoleTiGooglemapAnnotationProxy alloc] initWithOption:o] autorelease];
+}
+
+MAKE_SYSTEM_PROP(STANDARD_TYPE, kGMSTypeNormal);
+MAKE_SYSTEM_PROP(SATELLITE_TYPE, kGMSTypeSatellite);
+MAKE_SYSTEM_PROP(HYBRID_TYPE, kGMSTypeHybrid);
+
+/*
+MAKE_SYSTEM_PROP(ANNOTATION_RED,MKPinAnnotationColorRed);
+MAKE_SYSTEM_PROP(ANNOTATION_GREEN,MKPinAnnotationColorGreen);
+MAKE_SYSTEM_PROP(ANNOTATION_PURPLE,MKPinAnnotationColorPurple);
+
+MAKE_SYSTEM_PROP(ANNOTATION_DRAG_STATE_NONE,MKAnnotationViewDragStateNone);
+MAKE_SYSTEM_PROP(ANNOTATION_DRAG_STATE_START,MKAnnotationViewDragStateStarting);
+MAKE_SYSTEM_PROP(ANNOTATION_DRAG_STATE_DRAG,MKAnnotationViewDragStateDragging);
+MAKE_SYSTEM_PROP(ANNOTATION_DRAG_STATE_CANCEL,MKAnnotationViewDragStateCanceling);
+MAKE_SYSTEM_PROP(ANNOTATION_DRAG_STATE_END,MKAnnotationViewDragStateEnding);
+*/
 
 @end

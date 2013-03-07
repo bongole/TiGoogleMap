@@ -43,6 +43,8 @@
 		003DFA3416E5C80C0007498A /* ComBongoleTiGooglemapViewProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 003DFA3216E5C80C0007498A /* ComBongoleTiGooglemapViewProxy.h */; };
 		003DFA3516E5C80C0007498A /* ComBongoleTiGooglemapViewProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 003DFA3316E5C80C0007498A /* ComBongoleTiGooglemapViewProxy.m */; };
 		003DFA3716E5FE2E0007498A /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 003DFA3616E5FE2E0007498A /* GoogleMaps.framework */; };
+		0079399216E74CF400E13BF5 /* ComBongoleTiGooglemapAnnotationProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 0079399016E74CF400E13BF5 /* ComBongoleTiGooglemapAnnotationProxy.h */; };
+		0079399316E74CF400E13BF5 /* ComBongoleTiGooglemapAnnotationProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0079399116E74CF400E13BF5 /* ComBongoleTiGooglemapAnnotationProxy.m */; };
 		AA747D9F0F9514B9006C5449 /* ComBongoleTiGooglemap_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* ComBongoleTiGooglemap_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -79,6 +81,8 @@
 		003DFA3216E5C80C0007498A /* ComBongoleTiGooglemapViewProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComBongoleTiGooglemapViewProxy.h; sourceTree = "<group>"; };
 		003DFA3316E5C80C0007498A /* ComBongoleTiGooglemapViewProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComBongoleTiGooglemapViewProxy.m; sourceTree = "<group>"; };
 		003DFA3616E5FE2E0007498A /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
+		0079399016E74CF400E13BF5 /* ComBongoleTiGooglemapAnnotationProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComBongoleTiGooglemapAnnotationProxy.h; sourceTree = "<group>"; };
+		0079399116E74CF400E13BF5 /* ComBongoleTiGooglemapAnnotationProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComBongoleTiGooglemapAnnotationProxy.m; sourceTree = "<group>"; };
 		24DD6D1B1134B66800162E58 /* titanium.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = titanium.xcconfig; sourceTree = "<group>"; };
 		AA747D9E0F9514B9006C5449 /* ComBongoleTiGooglemap_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComBongoleTiGooglemap_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -161,6 +165,8 @@
 				003DFA2F16E5C8010007498A /* ComBongoleTiGooglemapView.m */,
 				003DFA3216E5C80C0007498A /* ComBongoleTiGooglemapViewProxy.h */,
 				003DFA3316E5C80C0007498A /* ComBongoleTiGooglemapViewProxy.m */,
+				0079399016E74CF400E13BF5 /* ComBongoleTiGooglemapAnnotationProxy.h */,
+				0079399116E74CF400E13BF5 /* ComBongoleTiGooglemapAnnotationProxy.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -186,6 +192,7 @@
 				003DFA2C16E5C7E40007498A /* ComBongoleTiGooglemapModuleAssets.h in Headers */,
 				003DFA3016E5C8010007498A /* ComBongoleTiGooglemapView.h in Headers */,
 				003DFA3416E5C80C0007498A /* ComBongoleTiGooglemapViewProxy.h in Headers */,
+				0079399216E74CF400E13BF5 /* ComBongoleTiGooglemapAnnotationProxy.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +267,7 @@
 				003DFA2D16E5C7E40007498A /* ComBongoleTiGooglemapModuleAssets.m in Sources */,
 				003DFA3116E5C8010007498A /* ComBongoleTiGooglemapView.m in Sources */,
 				003DFA3516E5C80C0007498A /* ComBongoleTiGooglemapViewProxy.m in Sources */,
+				0079399316E74CF400E13BF5 /* ComBongoleTiGooglemapAnnotationProxy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

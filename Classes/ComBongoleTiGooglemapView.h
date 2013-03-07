@@ -11,6 +11,14 @@
 @interface ComBongoleTiGooglemapView : TiUIView {
     @private
     GMSMapView *map;
+    CGFloat latitudeDelta;
+    CGFloat longitudeDelta;
+    CGFloat center_latitude;
+    CGFloat center_longitude;
+    BOOL initialized;
 }
+
+-(void)addAnnotation:(id)value;
+
 
 @end

@@ -6,10 +6,19 @@
  */
 
 #import "ComBongoleTiGooglemapViewProxy.h"
+#import "ComBongoleTiGooglemapView.h"
 #import "TiUtils.h"
 
 @implementation ComBongoleTiGooglemapViewProxy
 
 
+-(void)addAnnotation:(id)args
+{
+    ENSURE_UI_THREAD_1_ARG(args);
+    id o;
+    ENSURE_ARG_OR_NIL_AT_INDEX(o, args, 0, TiProxy);
+    
+    [(ComBongoleTiGooglemapView*)[self view] addAnnotation:o];
+}
 
 @end
